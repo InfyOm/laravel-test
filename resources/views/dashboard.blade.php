@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <table>
-                        <livewire:user-table/>
+                        <livewire:user-table />
                     </table>
                 </div>
             </div>

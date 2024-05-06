@@ -12,7 +12,8 @@
                                         <p class="mb-0 fw-bold">Message</p>
                                         <i class="fas fa-times"></i>
                                     </div>
-                                    <div class="card-body" style="max-height: 500px; overflow-y: auto;" id="messageContainer">
+                                    <div class="card-body" style="max-height: 400px; overflow-y: auto;" id="messageContainer">
+                                        @for($i = 0; $i < 10; $i++)
                                         @foreach ($messages as $message)
                                         <div class=" d-flex flex-row justify-content-end">
                                             <div class="p-3 me-2 border" style="border-radius: 15px; background-color: #fbfbfb;">
@@ -26,6 +27,7 @@
                                         </div>
                                         <div class="small text-muted text-end mb-3 mr-4">{{$message->created_at->diffForHumans()}}</div>
                                         @endforeach
+                                        @endfor
                                     </div>
                                 </div>
 
